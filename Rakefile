@@ -4,4 +4,4 @@ JASMINE_VERSION = File.readlines('Gemfile.lock').select { |l| l.match /\ jasmine
 
 import "#{ENV['GEM_HOME']}/gems/jasmine-#{JASMINE_VERSION}/lib/jasmine/tasks/jasmine.rake"
 
-task default: :jasmine
+task default: :'jasmine:ci'
